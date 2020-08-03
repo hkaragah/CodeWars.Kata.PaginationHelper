@@ -17,7 +17,7 @@ helper.page_item_count(0)  # should == 4 <br/>
 helper.page_item_count(1) # last page - should == 2 <br/>
 helper.page_item_count(2) # should == -1 since the page is invalid <br/>
 
-### page_ndex takes an item index and returns the page that it belongs on <br/>
+### page_index takes an item index and returns the page that it belongs on <br/>
 helper.page_index(5) # should == 1 (zero based index) <br/>
 helper.page_index(2) # should == 0 <br/>
 helper.page_index(20) # should == -1 <br/>
