@@ -4,15 +4,15 @@ For this exercise you will be strengthening your page-fu mastery. You will compl
 
 The class is designed to take in an array of values and an integer indicating how many items will be allowed per each page. The types of values contained within the collection/array are not relevant.
 
-The following are some examples of how this class is used: <\end>
+The following are some examples of how this class is used: <br/>
 
 
 
 
 
-helper = PaginationHelper(['a','b','c','d','e','f'], 4) \n
-helper.page_count # should == 2 \n
-helper.item_count # should == 6
+helper = PaginationHelper(['a','b','c','d','e','f'], 4) <br/>
+helper.page_count # should == 2 <br/>
+helper.item_count # should == 6 <br/>
 helper.page_item_count(0)  # should == 4
 helper.page_item_count(1) # last page - should == 2
 helper.page_item_count(2) # should == -1 since the page is invalid
