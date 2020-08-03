@@ -10,14 +10,14 @@ The following are some examples of how this class is used: <br/>
 
 
 
-helper = PaginationHelper(['a','b','c','d','e','f'], 4) <br/>
-helper.page_count # should == 2 <br/>
-helper.item_count # should == 6 <br/>
+helper = PaginationHelper(['a','b','c','d','e','f'], 4)
+helper.page_count # should == 2
+helper.item_count # should == 6 
 helper.page_item_count(0)  # should == 4
 helper.page_item_count(1) # last page - should == 2
 helper.page_item_count(2) # should == -1 since the page is invalid
 
-# page_ndex takes an item index and returns the page that it belongs on
+### page_ndex takes an item index and returns the page that it belongs on
 helper.page_index(5) # should == 1 (zero based index)
 helper.page_index(2) # should == 0
 helper.page_index(20) # should == -1
